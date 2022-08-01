@@ -1,0 +1,257 @@
+<!-- I used formspree.io for the form authentication because I would eventually like to tweek
+this a bit and take it live for some side artwork once I graduate.
+Also, I want to use this project on my portfolio when searching for software engineer jobs... -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johnathon's Art Portfolio</title>
+
+    <!--
+    Author:                     Johnathon Martin
+    MSU Denver login name:      jmart591
+    Date Created:               27-JULY-2022
+    Date Due:                   31-JULY-2022
+    Modified:                   27th-31st
+    Filename:                   home.html
+    Purpose:                    CIS 3030 Final Project
+    Editor:                     VS Code
+    -->
+
+    <!-- IconScout... might try different version -->
+    <!-- Using for icons -->
+    <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css"> -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    
+
+    <!-- Google Fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+    <link href="./css/reset.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="container nav__container"> <!-- Fix issue here -->
+            <a href="home.html"><h4>JOHNATHON</h4></a>
+            <ul class="nav__menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="open_menu_btn"><i class="uil uil-bars"></i></button>
+            <button id="close_menu_btn"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container header__container">
+            <div class="header__left">
+                <h1>Welcome to my Art Page</h1>
+                <p>I specialize in hyper-realistic, graphite drawings.</p>
+                <a href="portfolio.html" class="btn btn-primary">View My Work</a>
+            </div>
+            <div class="header__right">
+                <div class="header right__image">
+                    <img src="./images/header4.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section class="categories">
+        <div class="container categories__container">
+            <div class="categories__left">
+                <h1>Art Supplies</h1>
+                <p>Here is a list of some of the more important tools I use for creating hyperrealistic drawings.</p>
+                <button "#"><a href="resources.html" class="btn">Resources</a></button>
+                <!-- <button "#" class="btn">Resources</button> -->
+            </div>
+            <div class="categories__right">
+                <article class="category">
+                    <span class="category__icon"><img src="./images/bristol.jpg" /></span>
+                    <h5>Bristol Board</h5>
+                    <p>Strathmore 300series Bristol Paper. I use 14in x 17in.</p>
+                </article>
+                <article class="category">
+                    <span class="category__icon"><img src="./images/c_pencils.jpg" /></span>
+                    <h5>Charcoal Pencils</h5>
+                    <p>General's charcoal pencils are the best for getting dark/matte tones.</p>
+                </article>
+                <article class="category">
+                    <span class="category__icon"><img src="./images/g_pencils.jpg" /></span>
+                    <h5>Graphite Pencils</h5>
+                    <p>Faber Castell are my favorite, high-quality graphite pencils. </p>
+                </article>
+                <article class="category">
+                    <span class="category__icon"><img src="./images/stumps.jpg" /></span>
+                    <h5>Blending Stumps</h5>
+                    <p>These are absolutely important for blending. They do an amazing job while not ruining your artwork.</p>
+                </article>
+                <article class="category">
+                    <span class="category__icon"><img src="./images/tombow.jpg" /></span>
+                    <h5>Tombow Mono Eraser</h5>
+                    <p>This is an amazing eraser for small areas with its fine time, or sharp edges.</p>
+                </article>
+                <article class="category">
+                    <span class="category__icon"><img src="./images/k_eraser.jpg" /></span>
+                    <h5>Kneadable Eraser</h5>
+                    <p>These erasers are completely moldable, making it easy to reshape your eraser to fit your needs.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="faqs">
+        <h2>Frequently Asked Questions</h2>
+        <div class="container faqs__container">
+            <article class="faq">
+                <div class="faq_icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>What is Hyperrealism?</h4>
+                    <p>Hyperrealism is essentially an art form that not only replicates photorealism, resembling a high resolution picture.</p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq_icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>How did you get into Hyperrealism?</h4>
+                    <p>I've always liked drawing but never really took it seriously till shortly after the Covid Pandemic started.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq_icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>How long does it take per drawing?</h4>
+                    <p>Hours. I'm still pretty new to it and get impatient, still racking up 30-40 hours on a drawing overtime. However, 
+                        someone people take 100s of hours on their drawings depending on the size of their canvas/paper.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq_icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Graphite vs Charcoal?</h4>
+                    <p>Graphite has a bit of sheen in the darker areas which can be annoying for a larger size drawing. Charcoal is much more matte, 
+                        and is easier to get dark tones with, but its quite a lot messier and easier to smudge. I used both interchangeably.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq_icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Whats the best type of paper for Hyperrealism?</h4>
+                    <p>I prefer bristol board with a little bit of teeth so that I can get sharp edges, and also so the paper fibers 
+                        absorb the graphite easier.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq_icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Small/thin hair techniques?</h4>
+                    <p>One way is to use a Tombow mono eraser for its small edge and "slice" eraser marks over shading to create fine hairs. Another 
+                        technique I use is etching. I take an empty ballpoint pen and etch scratches into the paper for those small, bright hairs, and 
+                        for hair highlights, that way the graphite glides over the scratches when I shade in the hair.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq_icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>What are blending stumps for?</h4>
+                    <p>Blending stumps are for blending, whether its getting a large area to look the same, or transition from a darker tone to a 
+                        lighter tone. Blending tools and techniques are argueably one of the most important fundamentals to Hyperrealism.
+                    </p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq_icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Do you ever use color?</h4>
+                    <p>I do not. I like to stick to graphite and sometimes charcoal. So white, black, and every shade inbetween.</p>
+                </div>
+            </article>
+
+            <!-- <article class="faq">
+                <div class="faq_icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>First Question</h4>
+                    <p>Answer to the first question.</p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq_icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>First Question</h4>
+                    <p>Answer to the first question.</p>
+                </div>
+            </article> -->
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer__container">
+            <div class="footer__1">
+                <a href="home.html" class="footer__logo"><h4>JOHNATHON</h4></a>
+                <!-- <p>More information, possibly regarding some art</p> -->
+            </div>
+
+            <div class="footer__2">
+                <h4>Links</h4>
+                <ul class="links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__3">
+                <h4>Contact Me</h4>
+                <div>
+                    <p>johnathon.d.martin@gmail.com</p>
+                </div>
+
+                <ul class="footer__socials">
+                    <li>
+                        <a href="https://www.instagram.com/jonni24_art/"><i class="uil uil-instagram-alt"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.discord.com"><i class="uil uil-discord"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/johnathon-martin"><i class="uil uil-linkedin-alt"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer__disclaimer">
+            <small>This Web site was created in partial fulfillment of my CIS 3030 course requirements.</small>
+        </div>
+
+    </footer>
+
+</body>
+</html>
